@@ -177,7 +177,6 @@ function M.wrap(pair)
     return
   end
   local sel = get_selection()
-  -- vim.print(sel)
   local is_quotes = vim.list_contains(quotes, pair[1])
 
   -- if current selection is quoted by "'` and the input pair is
