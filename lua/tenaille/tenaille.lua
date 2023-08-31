@@ -8,8 +8,6 @@ local _pairs = {}
 
 local quotes = { '"', "'", '`' }
 
--- TODO use nvim_buf_set_lines to make surround changes
-
 local function get_selection()
   local v_pos = vim.list_slice(vim.fn.getpos('v'), 2, 3)
   local cursor_pos = vim.api.nvim_win_get_cursor(0)
