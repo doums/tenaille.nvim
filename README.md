@@ -10,7 +10,7 @@ As usual using your plugin manager, e.g. lazy.nvim
 local P = {
   -- plugin spec
   'doums/tenaille.nvim',
-    config = true,
+  config = true,
 }
 ```
 
@@ -23,7 +23,7 @@ local tenaille = require('tenaille')
 tenaille.setup({
   -- generate default mapping for each pair using
   -- <leader>_open-character_
-  -- e.g.
+  -- i.e.
   -- <leader>" for double quotes ""
   -- <leader>[ for brackets []
   -- <leader>{ for curly braces {} and so on...
@@ -60,8 +60,8 @@ note: multiline selections are supported
 
 ### Custom mapping
 
-In the config set `default_mapping` option to `false` then you can
-map whatever you want, example:
+In the config disable `default_mapping` option then you can map
+whatever you want, example:
 
 ```lua
 local wrap = require('tenaille').wrap
