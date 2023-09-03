@@ -29,6 +29,7 @@ tenaille.setup({
   -- <leader>{ for curly braces {} and so on...
   default_mapping = true,
   -- supported brackets and quotes pairs
+  -- ⚠ only 2 character pairs are supported
   pairs = {
     { '"', '"' },
     { "'", "'" },
@@ -60,10 +61,12 @@ note: multiline selections are supported
 
 ### Custom mapping
 
-In the config disable `default_mapping` option then you can map
-whatever you want, example:
-
 ```lua
+tenaille.setup({
+  -- disable default key mapping
+  default_mapping = false,
+)}
+
 local wrap = require('tenaille').wrap
 
 vim.keymap.set('v', '"', function() wrap({ '"', '"' }) end)
